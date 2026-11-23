@@ -608,7 +608,7 @@ return await z.generateAsync({type:'blob',mimeType:'application/vnd.openxmlforma
 async function jgGen(){if(!window.JSZip)return aviso('No cargó la librería de Word; revisa tu conexión');const v=jgRead();Object.keys(v).forEach(k=>{jgSt(k)[k]=v[k]});save();
 try{const bl=await jgDoc(v);$('#d').close();guarda('Acta-junta-curso-'+fn(CN(RG()))+'-T'+T+'.docx',bl);aviso('Acta de junta de curso generada')}catch(x){aviso('No se pudo generar el acta: '+((x&&x.message)||'error'))}}
 /* ===== Sincronización con Google Drive (carpeta privada de la app) ===== */
-var GCID='',GTK=null,GEXP=0,GBUSY=0,GQ=0,GTO=0,GST='',GCF=null;
+var GCID='1052892540475-5pf8lc1vksfd4k9sav1080p45k2klj80.apps.googleusercontent.com',GTK=null,GEXP=0,GBUSY=0,GQ=0,GTO=0,GST='',GCF=null;
 var GSC='https://www.googleapis.com/auth/drive.appdata',GFN='cuaderno-docente.json';
 function gSt(){try{return JSON.parse(localStorage.getItem('cd-sync')||'{}')}catch(e){return{}}}
 function gSv(o){try{localStorage.setItem('cd-sync',JSON.stringify(Object.assign(gSt(),o)))}catch(e){}}
